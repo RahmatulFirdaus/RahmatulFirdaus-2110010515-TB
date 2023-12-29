@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.20.6.final using JasperReports Library version 6.20.6-5c96b6aa8a39ac1dc6b6bea4b81168e16dd39231  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="AsetMasukk" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="d4924fb9-fea1-486d-b774-b376784485b1">
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="MYSQL"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT * FROM transaksi_inventaris_masuk]]>
+	</queryString>
+	<field name="kode_inventaris_masuk" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="kode_inventaris_masuk"/>
+		<property name="com.jaspersoft.studio.field.label" value="kode_inventaris_masuk"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="transaksi_inventaris_masuk"/>
+	</field>
+	<field name="kode_barang" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="kode_barang"/>
+		<property name="com.jaspersoft.studio.field.label" value="kode_barang"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="transaksi_inventaris_masuk"/>
+	</field>
+	<field name="tanggal_masuk" class="java.sql.Date">
+		<property name="com.jaspersoft.studio.field.name" value="tanggal_masuk"/>
+		<property name="com.jaspersoft.studio.field.label" value="tanggal_masuk"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="transaksi_inventaris_masuk"/>
+	</field>
+	<field name="jumlah" class="java.lang.Float">
+		<property name="com.jaspersoft.studio.field.name" value="jumlah"/>
+		<property name="com.jaspersoft.studio.field.label" value="jumlah"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="transaksi_inventaris_masuk"/>
+	</field>
+	<field name="nilai_barang" class="java.lang.Float">
+		<property name="com.jaspersoft.studio.field.name" value="nilai_barang"/>
+		<property name="com.jaspersoft.studio.field.label" value="nilai_barang"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="transaksi_inventaris_masuk"/>
+	</field>
+	<field name="kode_lokasi" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="kode_lokasi"/>
+		<property name="com.jaspersoft.studio.field.label" value="kode_lokasi"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="transaksi_inventaris_masuk"/>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<staticText>
+				<reportElement x="160" y="20" width="240" height="30" uuid="4328c9b4-664c-46ba-8be6-39015d36f05b"/>
+				<textElement>
+					<font size="20" isBold="true"/>
+				</textElement>
+				<text><![CDATA[LAPORAN ASET MASUK]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="70" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="10" width="120" height="30" uuid="82bdfa9b-b3c8-4d80-843d-6276d39824bc"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[Kode Aset Masuk]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="130" y="10" width="90" height="30" uuid="07c6fc7d-b546-4cfd-b6eb-2205d55a46fe"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[Kode Barang]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="240" y="10" width="100" height="30" uuid="226dc50b-0672-4ab4-aa90-5541ef4b1678"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[Tanggal Masuk]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="360" y="10" width="50" height="30" uuid="4abc4c66-c329-444e-b1cb-4382926e3698"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[Jumlah]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="420" y="10" width="40" height="30" uuid="a3ea0d04-cd34-458c-ad74-e765baab2242"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[Nilai ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="470" y="10" width="79" height="30" uuid="550a03fc-447d-42ab-be29-3eb279bbcaf5"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[Kode Lokasi]]></text>
+			</staticText>
+			<line>
+				<reportElement x="-1" y="36" width="549" height="1" uuid="8c098c5e-956b-4d68-aa73-da29b0fef2f2"/>
+				<graphicElement>
+					<pen lineWidth="5.0"/>
+				</graphicElement>
+			</line>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="125" splitType="Stretch">
+			<textField>
+				<reportElement x="-1" y="0" width="111" height="30" uuid="5f9ff70d-bf68-4aa9-81af-47e5f4cb7c9c"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{kode_inventaris_masuk}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="130" y="0" width="90" height="30" uuid="8896ae77-e12a-46a6-962a-ca8aada98cec"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{kode_barang}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="240" y="0" width="100" height="30" uuid="3feba00b-1fc6-4bf7-b245-addc09613ded"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{tanggal_masuk}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="358" y="0" width="50" height="30" uuid="3461066f-462d-41bf-82cd-c74e89dec2d8"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{jumlah}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="420" y="0" width="40" height="30" uuid="dabaaed5-02ca-4a08-b731-b4fb0a11c710"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{nilai_barang}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="470" y="0" width="78" height="30" uuid="07dcff0f-7452-4002-ace6-3a20c938d536"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{kode_lokasi}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>
